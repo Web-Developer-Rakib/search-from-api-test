@@ -6,6 +6,7 @@
 }
 .search-box {
   padding: 10px;
+  margin: 40px;
   border-radius: 15px;
   border: none;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
@@ -14,4 +15,9 @@
 }
 .search-box:focus {
   outline: none;
+}
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
