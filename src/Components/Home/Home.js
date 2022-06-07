@@ -25,7 +25,7 @@ const Home = () => {
             <i>Example: fish pie, Dal fry, Lamb Biryani</i>
           </div>
         ) : meals === null ? (
-          <h3>Meal Not found!</h3>
+          <h3>Meal not found!</h3>
         ) : (
           <div className="card-section">
             {meals.map((meal) => (
