@@ -20,8 +20,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  place-content: center;
+  place-items: center;
 }
 .ins-txt {
   text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .card-section {
+    grid-template-columns: 1fr;
+  }
 }
