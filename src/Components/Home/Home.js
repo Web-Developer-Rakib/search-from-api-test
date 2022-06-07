@@ -1,9 +1,14 @@
 import React from "react";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="home">
+      <input
+        type="text"
+        className="search-box"
+        placeholder="Type a meal name here"
+      />
     </div>
   );
 };
