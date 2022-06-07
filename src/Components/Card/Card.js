@@ -1,15 +1,16 @@
 import React from "react";
 import "./Card.css";
 
-const Card = () => {
+const Card = ({ meal }) => {
+  const { idMeal, strMealThumb, strMeal, strCategory, strArea } = meal;
   return (
-    <div className="card">
+    <div className="card" key={idMeal}>
       <div className="card-img">
-        <img src="https://picsum.photos/200/300/?blur" alt="" />
+        <img src={strMealThumb} alt="" width={300} />
       </div>
-      <h3>Name:</h3>
-      <h4>Category</h4>
-      <h4>Country</h4>
+      <h3>Name: {strMeal}</h3>
+      <h4>Category: {strCategory}</h4>
+      <h4>Country: {strArea}</h4>
     </div>
   );
 };
